@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Hassan - Portfolio</title>
+</head>
+<body>
+    <header class="p-1 text-center">
+        <nav id="header-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar">
+            <div  class="container" style="background-color: yellow;">
+                <img src="./images/sub-logo.png" class="sub-logo"/>
+            </div>
+        </nav>
+        <div class="container">
+            <img src="./images/logo-hassan.png" alt="Hassan Mehmood" class="rounded-circle" style="width: 100px; margin-top: 1px;" >
+            <h2 class="mt-0">Hassan Mehmood</h2>
+            <p class="mt-0"><em>Full Stack Data Scientist</em></p>
+            <p>*Web-site Under Construction</p>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 sidebar sidebar-main">
+                <nav id="body-sidebar" class="col-md-3 col-lg-2 d-md-block  sidebar">
+                    <div class="position-sticky">
+                        <ul class="nav flex-column" style="margin-bottom:330px; ">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    <i class="fas fa-home" style="color: black; font-size: 25px;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-user" style="color: black; font-size: 25px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="container my-6" id="contact">
+                        <h3 style="text-align:left; margin-left:-25px ;">Contact:</h3>
+
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/15-hassanmehmood" target="_blank"><i class="fab fa-linkedin linkedin-icon"></i></a>
+                            <a href="https://github.com/mehassanhmood" target="_blank"><i class="fab fa-github github-icon" style="margin-top: 10px;" ></i></a>
+                            <a href="mailto:hassan.mehmood@georgebrown.ca" class="mail">Email</a>
+                        </div>
+                    </section>
+                </nav>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <section class="container my-5">
+                    <div class="about">
+                        <h2 style="text-align: center;">About Me</h2>
+                        <p class="lead">As a passionate and detail-oriented data enthusiast, I possess a relentless drive for innovation. Currently, I am actively seeking a co-op or entry-level position to leverage and elevate my expertise in artificial intelligence. My enthusiasm lies in immersing myself in real-world AI applications, where I am committed to making meaningful contributions to forward-thinking organizations. Through this journey, I aim to gain invaluable hands-on experience in the dynamic and ever-evolving field of AI.</p>
+                        <br>
+                    </div>
+                </section>
+                <!-- Projects -->
+            
+            
+                <!-- <section class="container my-5"> -->
+            
+                    <div class="p-3 text-center" id="Projects">
+                        <h2>Projects</h2>
+                        <div class="project-container">
+                          <div class="project-card">
+                            <a href="https://github.com/mehassanhmood/Motion-Detection" style="text-decoration: none;" target="_blank">
+                              Motion Detection
+                              <div class="logos">
+                                <img src="./images/scikit-learn.png" width="80px" height="40px">
+                                <img src="./images/Python.svg.png" width="40px" height="40px">
+                            </div>
+                            </a>    
+                          </div>
+                      
+                          <div class="project-card">
+                            <a href="https://github.com/mehassanhmood/hadoop-spark-pipeline"  style="text-decoration: none;" target="_blank">
+                                Hadoop Spark Pipeline
+                                <div class="logos">
+                                    <img src="./images/hadoop.jpg" width="60px" height="40px">
+                                    <img src="./images/spark-logo.png" width="40px" height="40px">
+                                    <img src="./images/hive.png" width="40px" height="40px">
+                                </div>
+                            </a>    
+                          </div>
+                      
+                          <div class="project-card">
+                            <a href="https://github.com/mehassanhmood/DataEngineering-Project" style="text-decoration: none;" target="_blank">
+                              Data Engineered
+                              <div class="logos">
+                                <img src="./images/sql.png" width="40px" height="40px">
+                                <img src="./images/mongo.png" width="80px" height="40px">
+                            </div>
+                            </a>    
+                          </div>
+                      
+                        </div>
+                      </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="text-center p-3 bg-light align-items-start" id="footer">
+        <p>&copy; 2024 Hassan Mehmood. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
+    <!-- Bootstrap JS (optional, if you need Bootstrap JavaScript features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dhJnCEbZR9R66iJ9UoY/Gu8DNG5Sx5dRzBDoSgPIv59s5h9lH6oZaDYV2be1pVRJ" crossorigin="anonymous"></script>
+</body>
+</html>

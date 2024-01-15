@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3c97a8;
+}
+
+header {
+    background-color: rgb(255, 255, 16);
+
+    margin-top: 5px;
+
+    }
+.hassan-logo {
+    margin-top: 5px;
+}
+.sidebar-main {
+    background-color: #3992a2;
+}
+
+.project-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of project cards */
+  }
+
+  .project-card {
+
+    margin: 10px; /* Add some space between cards */
+    /* Add any additional styling for your project cards here */
+    border: 1px solid yellow;
+    justify-content: space-between;
+    border-radius: 6px;
+    width: 2in;
+    padding: 8px;
+    box-shadow: 0 3px 10px yellow;
+    align-items: center;
+
+    a {
+        color:black;
+        text-decoration: none;
+    }
+  }
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+
+    img {
+        margin-left: 5px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+section {
+    a {
+    color: #0A0A0A;
+    font-size: 20px;
+    margin-top: 20px;
+    text-decoration: none;}
+}
+section {
+    a:hover {
+        color: yellow;
+    }
+}
+
+
+.contact {
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 2px;
+}
+
+.nav-item {
+    color: #0A0A0A;
+}
