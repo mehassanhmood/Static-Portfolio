@@ -3,104 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Hassan - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
 </head>
-<body>
-    <header class="p-3 text-center">
-        <div class="container">
-            <img src="./images/logo-hassan.png" alt="Hassan Mehmood" class="img-fluid rounded-circle" style="width: 100px;">
-            <h1 class="mt-3">Hassan Mehmood</h1>
-            <p class="lead"><em>Full Stack Data Scientist</em></p><br>
-            <p>*Web-site Under Construction</p>
-        </div>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section class="container my-5">
-        <div class="about">
-            <h2 style="text-align: center;">About Me</h2>
-            <p class="lead">As a passionate and detail-oriented data enthusiast, I possess a relentless drive for innovation. Currently, I am actively seeking a co-op or entry-level position to leverage and elevate my expertise in artificial intelligence. My enthusiasm lies in immersing myself in real-world AI applications, where I am committed to making meaningful contributions to forward-thinking organizations. Through this journey, I aim to gain invaluable hands-on experience in the dynamic and ever-evolving field of AI.</p>
-            <br>
-        </div>
-    </section>
-    <!-- Projects -->
 
 
-    <!-- <section class="container my-5"> -->
+<body id="body">
 
-        <div class="p-3 text-center" id="Projects">
-            <h2>Projects</h2>
-            <div class="project-container">
-              <div class="project-card">
-                <a href="https://github.com/mehassanhmood/Motion-Detection" style="text-decoration: none;" target="_blank">
-                  Motion Detection
-                  <div class="logos">
-                    <img src="./images/scikit-learn.png" width="80px" height="40px">
-                    <img src="./images/Python.svg.png" width="40px" height="40px">
+        <!-- navbar -->
+    <div class="container-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid shadow-lg shadow-warning">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start align-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="./about.html" target="_blank">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#project-container">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-container">Contact</a></li>
+                    </ul>
                 </div>
-                </a>    
-              </div>
-          
-              <div class="project-card">
-                <a href="https://github.com/mehassanhmood/hadoop-spark-pipeline"  style="text-decoration: none;" target="_blank">
-                    Hadoop Spark Pipeline
-                    <div class="logos">
-                        <img src="./images/hadoop.jpg" width="60px" height="40px">
-                        <img src="./images/spark-logo.png" width="40px" height="40px">
-                        <img src="./images/hive.png" width="40px" height="40px">
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Section 1 -->
+    <section id= "section">
+        <div class="container" id="header">
+            <div class="row">
+
+                <div class="col-2" id="SidebarHeader">
+                    <div>
+                        <img src="./images/sub-logo.png" alt="Hassan Mehmood"  class="rounded my-5 mx-3 height-auto" id="logo-left"/>
                     </div>
-                </a>    
-              </div>
-          
-              <div class="project-card">
-                <a href="https://github.com/mehassanhmood/DataEngineering-Project" style="text-decoration: none;" target="_blank">
-                  Data Engineered
-                  <div class="logos">
-                    <img src="./images/sql.png" width="40px" height="40px">
-                    <img src="./images/mongo.png" width="80px" height="40px">
+                    <div id="social-Icons">
+                        <a href="https://linkedin.com/in/15-hassanmehmood" target="_blank"><i class="fab fa-linkedin" id="social-icon"></i></a>
+                        <a href="https://github.com/mehassanhmood" target="_blank"><i class="fab fa-github" id="social-icon"></i></a>
+                    </div>
                 </div>
-                </a>    
-              </div>
-          
-            </div>
-          </div>
-    <!-- </section> -->
 
-    <section class="container my-6" id="Contact">
-        <h2 style="text-align: center;">Contact</h2>
-        <p>You can reach me via email at: hassan.mehmood@georgebrown.ca</p>
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/15-hassanmehmood" target="_blank"><i class="fab fa-linkedin linkedin-icon"></i></a>
-            <a href="https://github.com/mehassanhmood" target="_blank"><i class="fab fa-github github-icon"></i></a>
+                <div class="col ms-5">   
+                        <div class="ms-5 ps-4 py-3">
+                            <img src="./images/logo-hassan.png" alt="Hassan Mehmood" class="img-fluid mxy-auto rounded-circle " style="width: 100px;">
+                        </div>
+                        <h1 class="mt-2">Hassan Mehmood</h1>
+                        <p class="lead"><em>Full Stack Data Scientist</em></p><br>
+                        <!-- <p><em>*Web-site Under Construction</em></p> -->
+                </div>
+            </div>
         </div>
     </section>
 
+
+    <!-- navbar
+    <div class="container-sm" style="background-color:rgb(205, 205, 232);">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start align-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link " href="./about.html" target="_blank">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div> -->
+
+
+
+
+            <!-- About Section -->
+    <section id="section">
+        <div class="container my-4">
+            <div class="row text-align-center">
+                <div class="col-2" id="SidebarBody">
+                    <p>Data Science Skills</p>
+                    <ul>
+                        <li>Deep Learning</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>Time Series Analysis</li>
+                        <li>Dimensionality Reduction</li>
+                        <li>Model Deployment</li>
+                        <li>Computer Vision</li>
+                        <li>Fine Tuning</li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <div class="about">
+                        <h2 class="fw-normal fs-3 bg-light shadow-lg shadow-warning text-center">About</h2>
+                        <p class="lead">As a passionate and detail-oriented data enthusiast, I possess a relentless drive for innovation. Currently, I am actively seeking a co-op or entry-level position to leverage and elevate my expertise in artificial intelligence. My enthusiasm lies in immersing myself in real-world AI applications, where I am committed to making meaningful contributions to forward-thinking organizations. Through this journey, I aim to gain invaluable hands-on experience in the dynamic and ever-evolving field of AI.</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- Projects -->
+
+
+    <section id="section"> 
+        <div class="container my-4">
+            <div class="row text-align-center">
+                <!-- side bar: -->
+                <div class="col-2" id="SidebarBody">
+                    <p>Data Engineering Skills</p>
+                    <ul>
+                        <li>ETL (Extract, Transform, Load)</li>
+                        <li>SQL (Structured Query Language)</li>
+                        <li>Data Warehousing</li>
+                        <li>Data Pipelines</li>
+                        <li>Big Data Technologies (Hadoop, Spark, etc.)</li>
+                        <li>Database Management Systems (e.g., MySQL, PostgreSQL, MongoDB)</li>
+                    </ul>
+                </div>
+    <!-- <-----------------------------> 
+    <div class="col-10">
+        <div class="container" id="project-container">
+            <div class="row text-align-center justify-content-center g-1">
+                <h2 class="fw-normal fs-3 bg-light shadow-lg shadow-warning text-center py-1">Projects</h2>
+                <!-- Project cards -->
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-md-4" id="project-card">
+                        <div class="card border-3 border-warning" id="cards">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Motion Detection</h6>   
+                                <!-- <p class="lead card-subtitle"></p> -->
+                                <a href="https://github.com/mehassanhmood/Motion-Detection" style="text-decoration: none;" target="_blank">
+                                    <div id="logos">
+                                        <img src="./images/scikit-learn.png" width="80px" height="40px">
+                                        <img src="./images/Python.svg.png" width="40px" height="40px">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- 2 -->
+                    <div class="col-md-4" id="project-card">
+                        <div class="card border-3 border-warning" id="cards">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Hadoop Spark Pipeline</h6>   
+                                <!-- <p class="lead card-subtitle"></p> -->
+                                <a href="https://github.com/mehassanhmood/hadoop-spark-pipeline"  style="text-decoration: none;" target="_blank">
+                                    <div id="logos">
+                                        <img src="./images/hadoop.jpg" width="60px" height="40px">
+                                        <img src="./images/spark-logo.png" width="40px" height="40px">
+                                        <img src="./images/hive.png" width="40px" height="40px">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                                    
+                                    
+                    <!-- 3 -->
+                    <div class="col-md-4" id="project-card">
+                        <div class="card border-3 border-warning" id="cards">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Data Engineered</h6>   
+                                <!-- <p class="lead card-subtitle"></p> -->
+                                <a href="https://github.com/mehassanhmood/DataEngineering-Project" style="text-decoration: none;" target="_blank">
+                                    <div id="logos">
+                                        <img src="./images/sql.png" width="40px" height="40px">
+                                        <img src="./images/mongo.png" width="80px" height="40px">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Second row of project cards -->
+                <div class="row" >
+                    <!-- 4 -->
+                    <div class="col-md-4" id="project-card">
+                        <div class="card border-3 border-warning" id="cards">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Nerual Style Transfer</h6>   
+                                <!-- <p class="lead card-subtitle"></p> -->
+                                <a href="https://github.com/mehassanhmood/Neural-Style-Transfer" style="text-decoration: none;" target="_blank">
+                                    <div id="logos">
+                                        <img src="./images/TensorFlow_logo.svg.png" width="40px" height="40px">
+                                        <img src="./images/DeepLearning.png" width="80px" height="40px">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add your fourth project card here -->
+                            
+                    </div>
+    
+                    <!-- 5 -->
+                    <div class="col-md-4" id="project-card">
+                        <div class="card border-3 border-warning" id="cards">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Sentiment Analysis</h6>   
+                                <!-- <p class="lead card-subtitle"></p> -->
+                                <a href="https://github.com/mehassanhmood/Portfolio-Optimzation" style="text-decoration: none;" target="_blank">
+                                    <div id="logos">
+                                        <img src="./images/SentimentAnalysis.png" width="40px" height="40px">
+                                        <img src="./images/Hugging-Face.png" width="80px" height="40px">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add your fifth project card here -->
+                    </div>
+    
+                    <!-- 6 -->
+                    <div class="col-md-4" id="project-card">
+                        <div class="card border-3 border-warning" id="cards">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Variational Auto-Encoders & GANs</h6>   
+                                <!-- <p class="lead card-subtitle"></p> -->
+                                <a href="https://github.com/mehassanhmood/ComputerVision" style="text-decoration: none;" target="_blank">
+                                    <div id="logos">
+                                        <img src="./images/TensorFlow_logo.svg.png" width="40px" height="40px">
+                                        <img src="./images/keras.png" width="80px" height="40px">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Add your sixth project card here -->
+                    </div>
+                </div>
+                <!-- This is where Project card end. -->
+            </div>
+        </div>    
+    </div>
+    
+<!-- < --------------------  > -->
+                <!-- <div class="col-10">
+                    <div class="container" id="project-container">
+                        <div class="row text-align-center justify-content-center g-1">
+                            <h2 class="fw-normal fs-3 bg-light shadow-lg shadow-warning text-center py-1">Projects</h2> -->
+                            <!-- Project cards -->
+                                <!-- 1 -->
+                                <!-- <div class="col" id="project-card">
+                                    <div class="card border-3 border-warning" id="cards">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title">Motion Detection</h4>    -->
+                                            <!-- <p class="lead card-subtitle"></p> -->
+                                            <!-- <a href="https://github.com/mehassanhmood/Motion-Detection" style="text-decoration: none;" target="_blank">
+                                                <div id="logos">
+                                                    <img src="./images/scikit-learn.png" width="80px" height="40px">
+                                                    <img src="./images/Python.svg.png" width="40px" height="40px">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- 2 -->
+                                <!-- <div class="col" id="project-card">
+                                    <div class="card border-3 border-warning" id="cards">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title">Hadoop Spark Pipeline</h4>    -->
+                                            <!-- <p class="lead card-subtitle"></p> -->
+                                            <!-- <a href="https://github.com/mehassanhmood/hadoop-spark-pipeline"  style="text-decoration: none;" target="_blank">
+                                                <div id="logos">
+                                                    <img src="./images/hadoop.jpg" width="60px" height="40px">
+                                                    <img src="./images/spark-logo.png" width="40px" height="40px">
+                                                    <img src="./images/hive.png" width="40px" height="40px">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                                 -->
+                                <!-- 3 -->
+                                <!-- <div class="col" id="project-card">
+                                    <div class="card border-3 border-warning" id="cards">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title">Data Engineered</h4>    -->
+                                            <!-- <p class="lead card-subtitle"></p> -->
+                                            <!-- <a href="https://github.com/mehassanhmood/DataEngineering-Project" style="text-decoration: none;" target="_blank">
+                                                <div id="logos">
+                                                    <img src="./images/sql.png" width="40px" height="40px">
+                                                    <img src="./images/mongo.png" width="80px" height="40px">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                
+                                <!-- This is where Project card end. -->
+                        </div>
+                    </div>    
+                </div>
+                <!--  ---------------------------------------------------------------------------------------------------------------------------------------------  -->
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="section">
+
+        <div class="container">
+            <div class="row text-align-center justify-content-center g-1">
+                <!-- sidebar 3 -->
+                <div class="col-2" id="SidebarBody">
+                    <p>Full Stack Engineer</p>
+                    <ul>
+                        <li>Proficiency in HTML, CSS, and JavaScript</li>
+                        <li>Strong understanding of server-side Frame Works (Django, Flask, Node.js)</li>
+                        <li>Knowledge of RESTful APIs and web services</li>
+                        <li>Version control using Git</li>
+                    </ul>
+                </div>
+
+                <div class="col-10", id="contact-container">
+                    <h2 class="fw-normal fs-3 bg-light shadow-lg shadow-warning text-center py-1">Contact</h2>
+                    <p>You can reach me via email at: hassan.mehmood@georgebrown.ca</p>
+                </div>    
+            </div>
+        </div>
+    </section>
     <footer class="text-center p-3 bg-light">
         <p>&copy; 2024 Hassan Mehmood. All rights reserved.</p>
     </footer>
 
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <!-- <script src="{{ url_for('static', filename='scripts.js') }}"></script> -->
 
-    <!-- Bootstrap JS (optional, if you need Bootstrap JavaScript features) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-dhJnCEbZR9R66iJ9UoY/Gu8DNG5Sx5dRzBDoSgPIv59s5h9lH6oZaDYV2be1pVRJ" crossorigin="anonymous"></script>
 </body>
 </html>
 
