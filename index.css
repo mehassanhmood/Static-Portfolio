@@ -8,7 +8,7 @@
 }
 
 #header {
-    background-color: rgb(119, 119, 150);
+    background-color: rgb(205, 205, 232);
     color: rgb(5, 5, 5);
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
@@ -28,12 +28,15 @@
 }
 
 #social-icon:hover {
-    color: #3376cd;
+    color: rgb(119, 119, 150);
     
 }
 #logo-left:hover {
-    color: #3376cd;;
+    color: rgb(119, 119, 150);
 }
 #cards:hover {
-    background-color: #3376cd;;
+    background-color:rgb(119, 119, 150);
+}
+#about-header:hover {
+    background-color: rgb(119, 119, 150);
 }
