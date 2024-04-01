@@ -8,9 +8,12 @@
 }
 
 #header {
-    background-color: #21c4fb;
-    color: white;
+    background-color: rgb(119, 119, 150);
+    color: rgb(5, 5, 5);
     font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    text-align: center;
+    /* padding-right: 250; */
 }
 #SidebarHeader {
     background-color:rgb(205, 205, 232)
@@ -25,12 +28,12 @@
 }
 
 #social-icon:hover {
-    color: #21c4fb;
+    color: #3376cd;
     
 }
 #logo-left:hover {
-    color: orange;
+    color: #3376cd;;
 }
 #cards:hover {
-    background-color: orange;
+    background-color: #3376cd;;
 }
